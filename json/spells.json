@@ -1,0 +1,144 @@
+[
+    {
+        "image": "base 0 formatting system but im lazy so here"
+    },
+    {
+        "image": "/assets/spells/SummonerBoost.png",
+        "name": "Cleanse",
+        "cooldown":210
+    },
+    {
+        "image": "/assets/spells/SummonerClairvoyance.png",
+        "name": "Clairvoyance",
+        "cooldown":60
+    },
+
+    {
+        "image": "/assets/spells/SummonerExhaust.png",
+        "name": "Exhaust",
+        "cooldown":210
+    },
+
+    {
+        "image": "/assets/spells/SummonerFlash.png",
+        "name": "Flash",
+        "cooldown":300
+    },
+
+    {
+        "image": "many 404s"
+    },
+
+    {
+        "image": "/assets/spells/SummonerHaste.png",
+        "name": "Ghost",
+        "cooldown":210
+    },
+
+    {
+        "image": "/assets/spells/SummonerHeal.png",
+        "name": "Heal",
+        "cooldown":240
+    },
+
+    {
+        "image": "404"
+    },
+
+    {
+        "image": "404"
+    },
+
+    {
+        "image": "404"
+    },
+
+    {
+        "image": "/assets/spells/SummonerSmite.png",
+        "name": "Smite",
+        "cooldown":75
+    },
+
+    {
+        "image": "/assets/spells/SummonerTeleport.png",
+        "name": "Teleport",
+        "cooldown":300
+    },
+    {
+        "image": "/assets/spells/SummonerMana.png",
+        "name": "Clarity",
+        "cooldown":180
+    },
+
+    {
+        "image": "/assets/spells/SummonerDot.png",
+        "name": "Ignite",
+        "cooldown":210
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "/assets/spells/SummonerOdinGarrison.png",
+        "name": "Garrison",
+        "cooldown":210
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "/assets/spells/SummonerBarrier.png",
+        "name": "Barrier",
+        "cooldown":210
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "404"
+    },
+    {
+        "image": "/assets/spells/SummonerDash.png",
+        "name": "To the King!",
+        "cooldown":10
+    },
+    {
+        "image": "/assets/spells/SummonerPoro.png",
+        "name": "Poro Toss",
+        "cooldown":20
+    },
+    {
+        "image": "/assets/spells/SummonerSnowball.png",
+        "name": "Mark",
+        "cooldown":40
+    }
+
+
+]

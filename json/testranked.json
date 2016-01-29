@@ -1,0 +1,354 @@
+{
+    "23264074": [{
+        "name": "Kog'Maw's Horde",
+        "tier": "DIAMOND",
+        "queue": "RANKED_SOLO_5x5",
+        "entries": [{
+            "playerOrTeamId": "23264074",
+            "playerOrTeamName": "Unknown User 1",
+            "division": "III",
+            "leaguePoints": 58,
+            "wins": 475,
+            "losses": 452,
+            "isHotStreak": false,
+            "isVeteran": true,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }, {
+        "name": "Nautilus's Sorcerers",
+        "tier": "GOLD",
+        "queue": "RANKED_TEAM_5x5",
+        "entries": [{
+            "playerOrTeamId": "TEAM-c7627270-d901-11e4-8678-c81f66dd45c9",
+            "playerOrTeamName": "La Grange",
+            "division": "I",
+            "leaguePoints": 75,
+            "wins": 13,
+            "losses": 10,
+            "isHotStreak": false,
+            "isVeteran": false,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }, {
+        "name": "Nami's Avatars",
+        "tier": "DIAMOND",
+        "queue": "RANKED_TEAM_5x5",
+        "entries": [{
+            "playerOrTeamId": "TEAM-b8a31a70-4ea7-11e5-b967-c81f66dcfb5a",
+            "playerOrTeamName": "Space Cats FTW",
+            "division": "V",
+            "leaguePoints": 100,
+            "wins": 25,
+            "losses": 12,
+            "isHotStreak": false,
+            "isVeteran": false,
+            "isFreshBlood": false,
+            "isInactive": false,
+            "miniSeries": {
+                "target": 2,
+                "wins": 0,
+                "losses": 0,
+                "progress": "NNN"
+            }
+        }]
+    }],
+    "20510650": [{
+        "name": "Mordekaiser's Assassins",
+        "tier": "DIAMOND",
+        "queue": "RANKED_SOLO_5x5",
+        "entries": [{
+            "playerOrTeamId": "20510650",
+            "playerOrTeamName": "oO Scorpz Oo",
+            "division": "II",
+            "leaguePoints": 0,
+            "wins": 1003,
+            "losses": 999,
+            "isHotStreak": false,
+            "isVeteran": true,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }],
+    "47679672": [{
+        "name": "Graves's Dragoons",
+        "tier": "DIAMOND",
+        "queue": "RANKED_SOLO_5x5",
+        "entries": [{
+            "playerOrTeamId": "47679672",
+            "playerOrTeamName": "Dainten",
+            "division": "I",
+            "leaguePoints": 90,
+            "wins": 484,
+            "losses": 409,
+            "isHotStreak": true,
+            "isVeteran": true,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }],
+    "34680633": [{
+        "name": "Talon's Fists",
+        "tier": "DIAMOND",
+        "queue": "RANKED_SOLO_5x5",
+        "entries": [{
+            "playerOrTeamId": "34680633",
+            "playerOrTeamName": "kobyyyyyy",
+            "division": "II",
+            "leaguePoints": 75,
+            "wins": 448,
+            "losses": 440,
+            "isHotStreak": false,
+            "isVeteran": true,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }, {
+        "name": "Nunu's Outriders",
+        "tier": "PLATINUM",
+        "queue": "RANKED_TEAM_5x5",
+        "entries": [{
+            "playerOrTeamId": "TEAM-a9677980-88e4-11e5-9b74-c81f66ddabda",
+            "playerOrTeamName": "Seasonal",
+            "division": "III",
+            "leaguePoints": 20,
+            "wins": 11,
+            "losses": 5,
+            "isHotStreak": false,
+            "isVeteran": false,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }],
+    "19225069": [{
+        "name": "Galio's Lightbringers",
+        "tier": "DIAMOND",
+        "queue": "RANKED_SOLO_5x5",
+        "entries": [{
+            "playerOrTeamId": "19225069",
+            "playerOrTeamName": "Avian",
+            "division": "III",
+            "leaguePoints": 77,
+            "wins": 688,
+            "losses": 681,
+            "isHotStreak": false,
+            "isVeteran": true,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }, {
+        "name": "Ahri's Crushers",
+        "tier": "DIAMOND",
+        "queue": "RANKED_TEAM_3x3",
+        "entries": [{
+            "playerOrTeamId": "TEAM-bb376a80-1099-11e5-adbc-c81f66dcfb5a",
+            "playerOrTeamName": "Tilters Anonymous",
+            "division": "III",
+            "leaguePoints": 13,
+            "wins": 60,
+            "losses": 44,
+            "isHotStreak": false,
+            "isVeteran": false,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }, {
+        "name": "Malzahar's Captains",
+        "tier": "PLATINUM",
+        "queue": "RANKED_TEAM_3x3",
+        "entries": [{
+            "playerOrTeamId": "TEAM-418f9a20-9eef-11e4-be48-c81f66dd45c9",
+            "playerOrTeamName": "Team Ebolas",
+            "division": "II",
+            "leaguePoints": 75,
+            "wins": 58,
+            "losses": 40,
+            "isHotStreak": false,
+            "isVeteran": false,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }, {
+        "name": "Nami's Tricksters",
+        "tier": "SILVER",
+        "queue": "RANKED_TEAM_5x5",
+        "entries": [{
+            "playerOrTeamId": "TEAM-7b3aecf0-aeae-11e5-8765-c81f66ddabda",
+            "playerOrTeamName": "HEY WHATS UP NI HAO",
+            "division": "III",
+            "leaguePoints": 0,
+            "wins": 5,
+            "losses": 0,
+            "isHotStreak": false,
+            "isVeteran": false,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }],
+    "22725258": [{
+        "name": "Kayle's Berserkers",
+        "tier": "DIAMOND",
+        "queue": "RANKED_SOLO_5x5",
+        "entries": [{
+            "playerOrTeamId": "22725258",
+            "playerOrTeamName": "Free WiFi",
+            "division": "II",
+            "leaguePoints": 0,
+            "wins": 641,
+            "losses": 593,
+            "isHotStreak": false,
+            "isVeteran": true,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }, {
+        "name": "Kayle's Army",
+        "tier": "GOLD",
+        "queue": "RANKED_TEAM_5x5",
+        "entries": [{
+            "playerOrTeamId": "TEAM-79525900-ac4c-11e5-9e7a-c81f66dcfb5a",
+            "playerOrTeamName": "mHERO Squad",
+            "division": "III",
+            "leaguePoints": 0,
+            "wins": 4,
+            "losses": 1,
+            "isHotStreak": false,
+            "isVeteran": false,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }],
+    "60099386": [{
+        "name": "Tryndamere's Sorcerers",
+        "tier": "DIAMOND",
+        "queue": "RANKED_SOLO_5x5",
+        "entries": [{
+            "playerOrTeamId": "60099386",
+            "playerOrTeamName": "ST2g",
+            "division": "III",
+            "leaguePoints": 75,
+            "wins": 113,
+            "losses": 99,
+            "isHotStreak": false,
+            "isVeteran": true,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }],
+    "38841069": [{
+        "name": "Janna's Mercenaries",
+        "tier": "DIAMOND",
+        "queue": "RANKED_SOLO_5x5",
+        "entries": [{
+            "playerOrTeamId": "38841069",
+            "playerOrTeamName": "Ikzencriel",
+            "division": "II",
+            "leaguePoints": 87,
+            "wins": 742,
+            "losses": 716,
+            "isHotStreak": false,
+            "isVeteran": false,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }, {
+        "name": "Malphite's Runemasters",
+        "tier": "BRONZE",
+        "queue": "RANKED_TEAM_5x5",
+        "entries": [{
+            "playerOrTeamId": "TEAM-9c726f10-6ec7-11e4-beb4-782bcb4d1861",
+            "playerOrTeamName": "illfukurgrandpatwice",
+            "division": "III",
+            "leaguePoints": 45,
+            "wins": 25,
+            "losses": 29,
+            "isHotStreak": false,
+            "isVeteran": false,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }, {
+        "name": "Nami's Avatars",
+        "tier": "DIAMOND",
+        "queue": "RANKED_TEAM_5x5",
+        "entries": [{
+            "playerOrTeamId": "TEAM-bc941620-7206-11e5-93b7-c81f66dd45c9",
+            "playerOrTeamName": "Michigan Premier eSports",
+            "division": "V",
+            "leaguePoints": 46,
+            "wins": 21,
+            "losses": 11,
+            "isHotStreak": false,
+            "isVeteran": false,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }, {
+        "name": "Kennen's Dragons",
+        "tier": "PLATINUM",
+        "queue": "RANKED_TEAM_5x5",
+        "entries": [{
+            "playerOrTeamId": "TEAM-4cb99580-b5bf-11e5-b39e-c81f66dcfb5a",
+            "playerOrTeamName": "Michigan Memers",
+            "division": "II",
+            "leaguePoints": 0,
+            "wins": 5,
+            "losses": 0,
+            "isHotStreak": false,
+            "isVeteran": false,
+            "isFreshBlood": true,
+            "isInactive": false
+        }]
+    }],
+    "38610133": [{
+        "name": "Cassiopeia's Wizards",
+        "tier": "DIAMOND",
+        "queue": "RANKED_SOLO_5x5",
+        "entries": [{
+            "playerOrTeamId": "38610133",
+            "playerOrTeamName": "SaintKilian",
+            "division": "I",
+            "leaguePoints": 0,
+            "wins": 785,
+            "losses": 717,
+            "isHotStreak": false,
+            "isVeteran": true,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }],
+    "66041593": [{
+        "name": "Dr. Mundo's Commandos",
+        "tier": "DIAMOND",
+        "queue": "RANKED_SOLO_5x5",
+        "entries": [{
+            "playerOrTeamId": "66041593",
+            "playerOrTeamName": "JayXu666",
+            "division": "II",
+            "leaguePoints": 33,
+            "wins": 248,
+            "losses": 189,
+            "isHotStreak": false,
+            "isVeteran": true,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }, {
+        "name": "Twisted Fate's Runemasters",
+        "tier": "PLATINUM",
+        "queue": "RANKED_TEAM_5x5",
+        "entries": [{
+            "playerOrTeamId": "TEAM-92188b10-9498-11e5-b39e-c81f66dcfb5a",
+            "playerOrTeamName": "You have lost",
+            "division": "II",
+            "leaguePoints": 0,
+            "wins": 5,
+            "losses": 2,
+            "isHotStreak": false,
+            "isVeteran": false,
+            "isFreshBlood": false,
+            "isInactive": false
+        }]
+    }]
+}

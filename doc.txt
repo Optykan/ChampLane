@@ -1,0 +1,51 @@
+Lane IDs
+0 : top
+1 : jungle
+2 : mid
+3 : support
+4 : marksman
+
+Weighting (w), higher = better confidence:
+
+SPELLS
+10w -> smite (jungle)
+2w -> tp (top)
+2w -> ignite (mid)
+2w -> barrier (mid)
+3w -> exhaust (support)
+3w -> heal (marksman)
+
+PRIMARY ROLES AND COMBOS
+
+TOP
++3w -> "tank (primary)"
++3w -> "tank/fighter" & no smite
+
+JUNGLE
++10w -> only smite
+
+MID
++4w -> "mage (primary)"
++1w -> "mage (only)"
++6w -> "mage (primary)" & ignite
+
++3w -> "assassin/fighter"
++3w -> "assassin (primary)"
++4w -> "assassin (primary)" & ignite
++5w -> "assassin/fighter" & ignite
++6w -> "assassin/mage" & ignite
+
+SUPPORT
++4w -> "support (primary)"
++6w -> "support (primary)" & exhaust
++3w -> "support (secondary)" & exhaust
+
+MARKSMAN
++3w -> "marksman (primary)"
+
+
+
+CONSIDER REVISING TOWARDS A 5 POINT BASED SYSTEM
+EACH TYPE IN A CATEGORY INCREASE THAT ROLES CHANCE
+so:
+champ x = [0, 1, 3, 8, 0] would be most likely support

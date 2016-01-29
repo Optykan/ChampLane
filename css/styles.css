@@ -1,0 +1,57 @@
+body {
+    background: #011822;
+    background: -moz-radial-gradient(center, ellipse cover, #011822 0%, #01121a 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #011822 0%, #01121a 100%);
+    background: radial-gradient(ellipse at center, #011822 0%, #01121a 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#011822', endColorstr='#01121a', GradientType=1);
+}
+.container {
+    width: 100%;
+}
+.red-container {
+    left: 1em;
+    display: inline-block;
+}
+.blue-container {
+    right: 1em;
+    display: inline-block;
+    float: right;
+}
+.red-container .champ {
+    background-color: #e74c3c;
+}
+.blue-container .champ {
+    background-color: #3498db;
+}
+.champ {
+    height: 135px;
+    width: 450px;
+    margin-top: 10px;
+}
+.center {
+    display: inline-block;
+    width: auto;
+    max-width: 969px;
+}
+.time {
+    width: 100%;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.map {
+    margin-left: 31px;
+    display: block;
+}
+@media screen and (max-width: 480px) {
+    .blue-container {
+        float: left;
+    }
+}
+@media screen and (max-width: 1890px) {
+    .map {
+        display: none;
+    }
+}
