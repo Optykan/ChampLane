@@ -5,6 +5,23 @@ body {
     background: radial-gradient(ellipse at center, #011822 0%, #01121a 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#011822', endColorstr='#01121a', GradientType=1);
 }
+.dim {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    text-transform: uppercase;
+    height: auto;
+    width: auto;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Open Sans", sans-serif;
+}
+.red-container .champ .dim {
+    right: 0px;
+}
+.blue-container .champ .dim {
+    left: 0px;
+}
 .container {
     width: 100%;
 }
@@ -27,6 +44,7 @@ body {
     height: 135px;
     width: 450px;
     margin-top: 10px;
+    position: relative;
 }
 .center {
     display: inline-block;

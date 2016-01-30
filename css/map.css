@@ -19,32 +19,46 @@
 
 /* PSEUDOCLASSES */
 
-.top::after {
+.map div div.banner::after {
     display: block;
     position: absolute;
     top: 75px;
     left: 28px;
-    background-image: url("../assets/roles/top.png");
     background-repeat: no-repeat;
     background-size: 40px 40px;
     height: 40px;
     width: 40px;
     content: "";
 }
+.top::after {
+    background-image: url("../assets/roles/top.png");
+}
+.jungle::after {
+    background-image: url("../assets/roles/jungle.png");
+}
+.mid::after {
+    background-image: url("../assets/roles/mid.png");
+}
+.support::after {
+    background-image: url("../assets/roles/support.png");
+}
+.bot::after {
+    background-image: url("../assets/roles/bot.png");
+}
 
 /* RED */
 
 .map-red .banner .champ {
     box-shadow: 0px 0px 0px #e74c3c;
-    -webkit-transition: box-shadow 0.5s ease;
-    -moz-transition: box-shadow 0.5s ease;
-    transition: box-shadow 0.5s ease;
+    -webkit-transition: box-shadow 0.3s ease;
+    -moz-transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 .map-red .banner:hover > .champ {
     box-shadow: 0px 0px 10px #e74c3c;
-    -webkit-transition: box-shadow 0.5s ease;
-    -moz-transition: box-shadow 0.5s ease;
-    transition: box-shadow 0.5s ease;
+    -webkit-transition: box-shadow 0.3s ease;
+    -moz-transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 .map-red .top {
     top: 200px;
