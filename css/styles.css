@@ -1,25 +1,19 @@
+html {
+    height: 100%;
+}
 body {
+    overflow: hidden;
     background: #011822;
+    height: 100%;
     background: -moz-radial-gradient(center, ellipse cover, #011822 0%, #01121a 100%);
     background: -webkit-radial-gradient(center, ellipse cover, #011822 0%, #01121a 100%);
     background: radial-gradient(ellipse at center, #011822 0%, #01121a 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#011822', endColorstr='#01121a', GradientType=1);
 }
-.dim {
-    position: absolute;
-    bottom: 0px;
-    color: white;
-    text-transform: uppercase;
-    height: auto;
-    width: auto;
-    padding: 0.5em 1em 0.5em 1em;
-    background-color: rgba(0, 0, 0, 0.5);
-    font-family: "Open Sans", sans-serif;
-}
-.red-container .champ .dim {
+.red-container .champ .dim, .red-container .champ .role {
     right: 0px;
 }
-.blue-container .champ .dim {
+.blue-container .champ .dim, .blue-container .champ .role {
     left: 0px;
 }
 .container {
@@ -45,6 +39,53 @@ body {
     width: 450px;
     margin-top: 10px;
     position: relative;
+}
+.champ .splash {
+    position: absolute;
+    z-index: 0;
+}
+.role {
+    position: absolute;
+    bottom: 45px;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Open Sans", sans-serif;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    z-index: 1;
+    padding-left: 1em;
+    padding-right: 0.5em;
+}
+.role::after {
+    content: "";
+    padding-right: 5px;
+}
+.dim {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    text-transform: uppercase;
+    height: auto;
+    width: auto;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Open Sans", sans-serif;
+    z-index: 1;
+}
+.spell {
+    left: 10px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    z-index: 1;
+}
+.spell:nth-child(1) {
+    bottom: 60px;
+}
+.spell:nth-child(2) {
+    bottom: 10px;
 }
 .center {
     display: inline-block;
