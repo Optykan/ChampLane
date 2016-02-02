@@ -97,7 +97,7 @@ function distTeam($preArr){
   return $arranged;
 }
 
-function probability($c, $s1, $s2, $ignore){
+function probability($c, $s1, $s2){
   $champions = json_decode(file_get_contents("json/champions.json"), true);
   $tags = json_decode(file_get_contents("json/tags.json"), true);
   //returns the probability of where a champion will go (in a 5 point array)
@@ -105,6 +105,7 @@ function probability($c, $s1, $s2, $ignore){
   $probability=array (0,0,0,0,0);
   $spells=array($s1, $s2);
   $ctags = $tags['data'][$champions[$c]['key']]['tags'];
+  $pref=$tags['data'][$champions[$c]['key']]['pref'];
 
   //should test the tags first
   //then summoner spells
@@ -114,17 +115,36 @@ function probability($c, $s1, $s2, $ignore){
     if(in_array("Fighter", $ctags)){
       if(in_array(12, $spells)){
         $probability[0]+=10;
+        if(in_array(0, $pref)){
+          $probability[0]+=-2*(array_search(0, $pref))+7;
+        }
       }else{
         $probability[0]+=5;
+        if(in_array(0, $pref)){
+          $probability[0]+=-2*(array_search(0, $pref))+7;
+        }
       }
     }else{
       $probability[0]+=3;
+      if(in_array(0, $pref)){
+        $probability[0]+=-2*(array_search(0, $pref))+7;
+      }
     }
   }
+  if($probability[0]==0 && in_array(0, $pref)){
+    $probability[0]+=-2*(array_search(0, $pref))+7;
+  }
+
 
   //jungle
   if(in_array(11, $spells)){
     $probability[1]+=20;
+    if(in_array(1, $pref)){
+      $probability[1]+=-2*(array_search(1, $pref))+7;
+    }
+  }
+  if($probability[1]==0 && in_array(1, $pref)){
+    $probability[1]+=-2*(array_search(1, $pref))+7;
   }
 
   //mid
@@ -134,29 +154,61 @@ function probability($c, $s1, $s2, $ignore){
       # a mage with barrier (thinking orianna here)
       # or an assassin with tp (maybe riven went mid idunno)
       $probability[2]+=10;
+      if(in_array(2, $pref)){
+        $probability[2]+=-2*(array_search(2, $pref))+7;
+      }
     }else{
       $probability[2]+=5;
+      if(in_array(2, $pref)){
+        $probability[2]+=-2*(array_search(2, $pref))+7;
+      }
     }
   }
+  if($probability[2]==0 && in_array(2, $pref)){
+    $probability[2]+=-2*(array_search(2, $pref))+7;
+  }
+
   //support
   if($ctags[0]=="Support"){
     if(in_array(3, $spells) || in_array(14, $spells)){
       $probability[3]+=10;
+      if(in_array(3, $pref)){
+        $probability[3]+=-2*(array_search(3, $pref))+7;
+      }
     }else{
       $probability[3]+=5;
+      if(in_array(3, $pref)){
+        $probability[3]+=-2*(array_search(3, $pref))+7;
+      }
     }
   }else if($ctags[1]=="Support"){
     $probability[3]+=3;
+    if(in_array(3, $pref)){
+      $probability[3]+=-2*(array_search(3, $pref))+7;
+    }
   }
+  if($probability[3]==0 && in_array(3, $pref)){
+    $probability[3]+=-2*(array_search(3, $pref))+7;
+  }
+
+
   //bot
   if(in_array("Marksman", $ctags)){
     if(in_array(7, $spells)){
       $probability[4]+=10;
+      if($probability[4]==0 && in_array(4, $pref)){
+        $probability[4]+=-2*(array_search(4, $pref))+7;
+      }
     }else {
       $probability[4]+=5;
+      if($probability[4]==0 && in_array(4, $pref)){
+        $probability[4]+=-2*(array_search(4, $pref))+7;
+      }
     }
   }
-
+  if($probability[4]==0 && in_array(4, $pref)){
+    $probability[4]+=-2*(array_search(4, $pref))+7;
+  }
   return $probability;
 
 }
@@ -167,8 +219,8 @@ function lanes($c, $s, $conf){
   $arrangement=array(0,0,0,0,0);
   for($i=0;$i<5;$i++){
     # set the arrangement by calculating the probability of each champion
-    $arrangement[$i]=rLane(probability($c[$i], $s[(2*$i)], $s[2*$i+1], 0), false);
-    $conf[$i]=confidence(probability($c[$i], $s[(2*$i)], $s[2*$i+1], 0));
+    $arrangement[$i]=rLane(probability($c[$i], $s[(2*$i)], $s[2*$i+1]), false);
+    $conf[$i]=confidence(probability($c[$i], $s[(2*$i)], $s[2*$i+1]));
   }
   return array_merge(distTeam($arrangement), $conf);
 }
@@ -188,9 +240,9 @@ function laneMaster ($c, $s, $conf){
 }
   $region='NA1';
   $id=$_GET['id'];
-  $key="dd2e34c0-f21c-469c-a093-c50a6e4a4574";
-  $data = json_decode(file_get_contents("https://na.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/$region/$id?api_key=$key"), true);
-  //$data =json_decode(file_get_contents("json/testfile.json"), true);
+
+  //$data = json_decode(file_get_contents("https://na.api.pvp.net/observer-mode/rest/consumer/getSpectatorGameInfo/$region/$id?api_key=$key"), true);
+  $data =json_decode(file_get_contents("json/testfile.json"), true);
   $skins =json_decode(file_get_contents("json/skins.json"), true);
   $champname = json_decode(file_get_contents("json/champions.json"), true);
   $spellname = json_decode(file_get_contents("json/spells.json"), true);
@@ -215,6 +267,7 @@ function laneMaster ($c, $s, $conf){
     echo round((float)$team[0][$i+5] * 100 )."% confident";
     echo "</br>";
   }
+  echo "</br>";
   for($i=0;$i<5;$i++){
     echo translate($team[1][$i]);
     echo $champname[$champions[$i+5]]['name']." - ";

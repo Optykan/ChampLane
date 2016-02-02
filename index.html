@@ -6,12 +6,21 @@
     <link href="css/map.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width" />
 </head>
 
 <body>
-    <div class="modal-dim"></div>
+    <div class="body-dim"></div>
     <div class="champ-modal">
+        <modal-dim></modal-dim>
+        <modal-bg data-bg="Aatrox" id="mbg"></modal-bg>
+        <modal-content>
+            <div class="row">
+                <h1>Aatrox</h1>
+                <h2>the Darkin Blade</h2>
+            </div>
+        </modal-content>
     </div>
     <div class="container">
         <div class="red-container">
@@ -150,6 +159,10 @@
             </div>
         </div>
     </div>
+    <script>
+        var data = document.getElementById("mbg");
+        data.style.backgroundImage = "url('assets/splash/" + data.dataset.bg + ".jpg')";
+    </script>
 </body>
 
 </html>

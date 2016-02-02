@@ -912,7 +912,7 @@
             "name": "Shen",
             "title": "Eye of Twilight",
             "tags": ["Tank", "Fighter"],
-            "pref": [0, 1]
+            "pref": [0, 1, 3]
         },
         "Braum": {
             "id": 201,
@@ -1025,6 +1025,14 @@
             "title": "the Prodigal Explorer",
             "tags": ["Marksman", "Mage"],
             "pref": [4, 2]
+        },
+        "Jhin":{
+          "id":202,
+          "key":"Jhin",
+          "name":"Jhin",
+          "title": "the Virtuoso",
+          "tags":["Marksman", "Assassin"],
+          "pref":[4, 2]
         }
     }
 }
