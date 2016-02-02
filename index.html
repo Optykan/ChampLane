@@ -6,68 +6,74 @@
     <link href="css/map.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+    <link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width" />
 </head>
 
-<body>
-    <!--<div class="body-dim"></div>
-    <div class="champ-box-modal">
-        <modal-dim></modal-dim>
-        <modal-bg data-bg="Aatrox" id="mbg"></modal-bg>
-        <modal-content>
-            <div class="row">
-                <h1>Aatrox</h1>
-                <h2>the Darkin Blade</h2>
-            </div>
-        </modal-content>
-    </div>-->
+<body style="margin:0">
+    <div class="dim-wrapper" id="dim">
+        <div class="body-dim"> </div>
+        <modal-bg id="mbg"></modal-bg>
+        <div class="champ-modal" id="modal">
+            <modal-content>
+                <div class="row">
+                    <h1 id="champ-name"></h1>
+                    <h2 id="champ-title"></h2>
+                </div>
+                <div class="description" id="champ-desc">
+                    this is a really long description
+                </div>
+            </modal-content>
+            <i class="ion ion-ios-close-outline" id="close" onclick="closeModal()"></i>
+        </div>
+    </div>
     <div class="container">
         <div class="red-container">
-            <div class="champ-box" id="r0">
+            <div class="champ-box">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerTeleport.png">
                 <p class="role">top</p>
                 <p class="dim">
                     summoner 1
                 </p>
-                <splash data-splash="Aatrox"></splash>
+                <splash data-splash="Aatrox" data-name="Aatrox" data-title="the Darkin Blade"></splash>
             </div>
-            <div class="champ-box" id="r1">
+            <div class="champ-box">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerSmite.png">
                 <p class="role">jungle</p>
                 <p class="dim">
                     summoner 2
                 </p>
-                <splash data-splash="Nidalee"></splash>
+                <splash data-splash="Nidalee" data-name="Nidalee" data-title="the Bestial Huntress"></splash>
             </div>
-            <div class="champ-box" id="r2">
+            <div class="champ-box">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerDot.png">
                 <p class="role">mid</p>
                 <p class="dim">
                     summoner 3
                 </p>
-                <splash data-splash="Ahri"></splash>
+                <splash data-splash="Ahri" data-name="Ahri" data-title="the Nine-Tailed Fox"></splash>
             </div>
-            <div class="champ-box" id="r3">
+            <div class="champ-box">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerExhaust.png">
                 <p class="role">support</p>
                 <p class="dim">
                     summoner 4
                 </p>
-                <splash data-splash="Thresh"></splash>
+                <splash data-splash="Thresh" data-name="Thresh" data-title="the Chain Warden" data-desc="''The mind is a wondrous thing to tear apart.''<br><br>Sadistic and cunning, Thresh is a restless spirit who prides himself on tormenting mortals and breaking them with slow, excruciating inventiveness. His victims suffer far beyond the point of death, for Thresh wreaks agony upon their souls, imprisoning them in his lantern to torture for all eternity."></splash>
             </div>
-            <div class="champ-box" id="r4">
+            <div class="champ-box">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerHeal.png">
                 <p class="role">bot</p>
                 <p class="dim">
                     summoner 5
                 </p>
-                <splash data-splash="Lucian"></splash>
+                <splash data-splash="Lucian" data-name="Lucian" data-title="the Purifier"></splash>
             </div>
         </div>
         <div class="center">
@@ -127,7 +133,7 @@
         </div>
 
         <div class="blue-container">
-            <div class="champ-box" id="b0">
+            <div class="champ-box">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerTeleport.png">
                 <p class="role">top</p>
@@ -136,7 +142,7 @@
                 </p>
                 <splash data-splash="Lissandra"></splash>
             </div>
-            <div class="champ-box" id="b1">
+            <div class="champ-box">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerSmite.png">
                 <p class="role">jungle</p>
@@ -145,7 +151,7 @@
                 </p>
                 <splash data-splash="Urgot"></splash>
             </div>
-            <div class="champ-box" id="b2">
+            <div class="champ-box">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerDot.png">
                 <p class="role">mid</p>
@@ -154,7 +160,7 @@
                 </p>
                 <splash data-splash="Cassiopeia"></splash>
             </div>
-            <div class="champ-box" id="b3">
+            <div class="champ-box">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerExhaust.png">
                 <p class="role">support</p>
@@ -163,7 +169,7 @@
                 </p>
                 <splash data-splash="Annie"></splash>
             </div>
-            <div class="champ-box" id="b4">
+            <div class="champ-box">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerHeal.png">
                 <p class="role">bot</p>
@@ -174,19 +180,7 @@
             </div>
         </div>
     </div>
-    <script>
-        //var data = document.getElementById("mbg");
-        //data.style.backgroundImage ="url( 'assets/splash/" + data.dataset.bg +".jpg')";
-
-        var snodes = document.getElementsByTagName("splash");
-        var cnodes = document.getElementsByClassName("champ");
-        for (var i = 0; i < snodes.length; i++) {
-            snodes[i].style.backgroundImage = "url('assets/splash/center/" + snodes[i].dataset.splash + ".jpg')";
-        }
-        for (var i = 0; i < cnodes.length; i++) {
-            cnodes[i].src = "assets/splash/square/" + snodes[i].dataset.splash + ".png";
-        }
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

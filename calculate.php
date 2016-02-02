@@ -5,6 +5,15 @@ smite is 11
 tp is 12
 ignite is 14
 barrier is 21*/
+function verify($team){
+  $occur=array_count_values($team);
+  foreach($occur as $key=>$count){
+    if($count>1){
+      return $key;
+    }
+  }
+  return true;
+}
 function distribute($team){
   $dist=$team;
   for($i=0;$i<5;$i++){
@@ -166,6 +175,11 @@ function team($c, $s){
     # figure this mess out later
   }else if (array_count_values($arrangement)[-1]==1){
     $arrangement=distribute($arrangement);
+  }
+  $multiple=verify($arrangement);
+  if($multiple !== true){
+    # we have an unresolveable conflict
+    return array(-1,-1,-1,-1,-1);
   }
   return $arrangement;
 }

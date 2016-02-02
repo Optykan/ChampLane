@@ -20,11 +20,11 @@ body {
     width: 100%;
 }
 .red-container {
-    left: 1em;
+    margin-left: 1em;
     display: inline-block;
 }
 .blue-container {
-    right: 1em;
+    margin-right: 1em;
     display: inline-block;
     float: right;
 }
@@ -39,6 +39,18 @@ body {
     width: 450px;
     margin-top: 10px;
     position: relative;
+}
+.blue-container .champ-box .dim:hover {
+    color: #3498db;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.red-container .champ-box .dim:hover {
+    color: #e74c3c;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 splash {
     position: absolute;
@@ -62,6 +74,9 @@ splash {
     z-index: 1;
     padding-left: 1em;
     padding-right: 0.5em;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 .role::after {
     content: "";
@@ -78,6 +93,9 @@ splash {
     background-color: rgba(0, 0, 0, 0.5);
     font-family: "Open Sans", sans-serif;
     z-index: 1;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 .spell {
     margin-left: 10px;
