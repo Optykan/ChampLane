@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <div class="body-dim"></div>
-    <div class="champ-modal">
+    <!--<div class="body-dim"></div>
+    <div class="champ-box-modal">
         <modal-dim></modal-dim>
         <modal-bg data-bg="Aatrox" id="mbg"></modal-bg>
         <modal-content>
@@ -21,53 +21,53 @@
                 <h2>the Darkin Blade</h2>
             </div>
         </modal-content>
-    </div>
+    </div>-->
     <div class="container">
         <div class="red-container">
-            <div class="champ" id="r0">
+            <div class="champ-box" id="r0">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerTeleport.png">
                 <p class="role">top</p>
                 <p class="dim">
                     summoner 1
                 </p>
-                <img class="splash" src="http://placehold.it/450x135">
+                <splash data-splash="Aatrox"></splash>
             </div>
-            <div class="champ" id="r1">
+            <div class="champ-box" id="r1">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerSmite.png">
                 <p class="role">jungle</p>
                 <p class="dim">
                     summoner 2
                 </p>
-                <img class="splash" src="http://placehold.it/450x135">
+                <splash data-splash="Nidalee"></splash>
             </div>
-            <div class="champ" id="r2">
+            <div class="champ-box" id="r2">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerDot.png">
                 <p class="role">mid</p>
                 <p class="dim">
                     summoner 3
                 </p>
-                <img class="splash" src="http://placehold.it/450x135">
+                <splash data-splash="Ahri"></splash>
             </div>
-            <div class="champ" id="r3">
+            <div class="champ-box" id="r3">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerExhaust.png">
                 <p class="role">support</p>
                 <p class="dim">
                     summoner 4
                 </p>
-                <img class="splash" src="http://placehold.it/450x135">
+                <splash data-splash="Thresh"></splash>
             </div>
-            <div class="champ" id="r4">
+            <div class="champ-box" id="r4">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
                 <img class="spell" src="assets/spells/SummonerHeal.png">
                 <p class="role">bot</p>
                 <p class="dim">
                     summoner 5
                 </p>
-                <img class="splash" src="http://placehold.it/450x135">
+                <splash data-splash="Lucian"></splash>
             </div>
         </div>
         <div class="center">
@@ -79,45 +79,45 @@
                 <div class="map-red">
                     <div class="banner top">
                         <img src="assets/banner.png">
-                        <img class="champ" src="assets/splash/square/Aatrox.png">
+                        <img class="champ" data-src="r0">
                     </div>
                     <div class="banner jungle">
                         <img src="assets/banner.png">
-                        <img class="champ" src="assets/splash/square/Nidalee.png">
+                        <img class="champ" data-src="r1">
                     </div>
                     <div class="banner mid">
                         <img src="assets/banner.png">
-                        <img class="champ" src="assets/splash/square/Ahri.png">
+                        <img class="champ" data-src="r2">
                     </div>
                     <div class="banner support">
                         <img src="assets/banner.png">
-                        <img class="champ" src="assets/splash/square/Thresh.png">
+                        <img class="champ" data-src="r3">
                     </div>
                     <div class="banner bot">
                         <img src="assets/banner.png">
-                        <img class="champ" src="assets/splash/square/Ezreal.png">
+                        <img class="champ" data-src="r4">
                     </div>
                 </div>
                 <div class="map-blue">
                     <div class="banner top">
                         <img src="assets/banner.png">
-                        <img class="champ" src="assets/splash/square/Irelia.png">
+                        <img class="champ" data-src="b0">
                     </div>
                     <div class="banner jungle">
                         <img src="assets/banner.png">
-                        <img class="champ" src="assets/splash/square/Udyr.png">
+                        <img class="champ" data-src="b1">
                     </div>
                     <div class="banner mid">
                         <img src="assets/banner.png">
-                        <img class="champ" src="assets/splash/square/Annie.png">
+                        <img class="champ" data-src="b2">
                     </div>
                     <div class="banner support">
                         <img src="assets/banner.png">
-                        <img class="champ" src="assets/splash/square/Sona.png">
+                        <img class="champ" data-src="b3">
                     </div>
                     <div class="banner bot">
                         <img src="assets/banner.png">
-                        <img class="champ" src="assets/splash/square/Lucian.png">
+                        <img class="champ" data-src="b4">
                     </div>
                 </div>
                 <!--
@@ -127,41 +127,65 @@
         </div>
 
         <div class="blue-container">
-            <div class="champ" id="b0">
+            <div class="champ-box" id="b0">
+                <img class="spell" src="assets/spells/SummonerFlash.png">
+                <img class="spell" src="assets/spells/SummonerTeleport.png">
                 <p class="role">top</p>
                 <p class="dim">
                     summoner 1
                 </p>
+                <splash data-splash="Lissandra"></splash>
             </div>
-            <div class="champ" id="b1">
+            <div class="champ-box" id="b1">
+                <img class="spell" src="assets/spells/SummonerFlash.png">
+                <img class="spell" src="assets/spells/SummonerSmite.png">
                 <p class="role">jungle</p>
                 <p class="dim">
                     summoner 2
                 </p>
+                <splash data-splash="Urgot"></splash>
             </div>
-            <div class="champ" id="b2">
+            <div class="champ-box" id="b2">
+                <img class="spell" src="assets/spells/SummonerFlash.png">
+                <img class="spell" src="assets/spells/SummonerDot.png">
                 <p class="role">mid</p>
                 <p class="dim">
                     summoner 3
                 </p>
+                <splash data-splash="Cassiopeia"></splash>
             </div>
-            <div class="champ" id="b3">
+            <div class="champ-box" id="b3">
+                <img class="spell" src="assets/spells/SummonerFlash.png">
+                <img class="spell" src="assets/spells/SummonerExhaust.png">
                 <p class="role">support</p>
                 <p class="dim">
                     summoner 4
                 </p>
+                <splash data-splash="Annie"></splash>
             </div>
-            <div class="champ" id="b4">
+            <div class="champ-box" id="b4">
+                <img class="spell" src="assets/spells/SummonerFlash.png">
+                <img class="spell" src="assets/spells/SummonerHeal.png">
                 <p class="role">bot</p>
                 <p class="dim">
                     summoner 5
                 </p>
+                <splash data-splash="Jhin"></splash>
             </div>
         </div>
     </div>
     <script>
-        var data = document.getElementById("mbg");
-        data.style.backgroundImage = "url('assets/splash/" + data.dataset.bg + ".jpg')";
+        //var data = document.getElementById("mbg");
+        //data.style.backgroundImage ="url( 'assets/splash/" + data.dataset.bg +".jpg')";
+
+        var snodes = document.getElementsByTagName("splash");
+        var cnodes = document.getElementsByClassName("champ");
+        for (var i = 0; i < snodes.length; i++) {
+            snodes[i].style.backgroundImage = "url('assets/splash/center/" + snodes[i].dataset.splash + ".jpg')";
+        }
+        for (var i = 0; i < cnodes.length; i++) {
+            cnodes[i].src = "assets/splash/square/" + snodes[i].dataset.splash + ".png";
+        }
     </script>
 </body>
 

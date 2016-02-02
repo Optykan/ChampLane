@@ -10,10 +10,10 @@ body {
     background: radial-gradient(ellipse at center, #011822 0%, #01121a 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#011822', endColorstr='#01121a', GradientType=1);
 }
-.red-container .champ .dim, .red-container .champ .role {
+.red-container .champ-box .dim, .red-container .champ-box .role, .blue-container .champ-box .spell {
     right: 0px;
 }
-.blue-container .champ .dim, .blue-container .champ .role {
+.blue-container .champ-box .dim, .blue-container .champ-box .role, .red-container .champ-box .spell {
     left: 0px;
 }
 .container {
@@ -28,21 +28,26 @@ body {
     display: inline-block;
     float: right;
 }
-.red-container .champ {
+.red-container .champ-box {
     background-color: #e74c3c;
 }
-.blue-container .champ {
+.blue-container .champ-box {
     background-color: #3498db;
 }
-.champ {
+.champ-box {
     height: 135px;
     width: 450px;
     margin-top: 10px;
     position: relative;
 }
-.champ .splash {
+splash {
     position: absolute;
+    height: 100%;
+    width: 100%;
     z-index: 0;
+    background-position: 0px -25px;
+    background-size: 450px 253px;
+    background-repeat: none;
 }
 .role {
     position: absolute;
@@ -75,7 +80,8 @@ body {
     z-index: 1;
 }
 .spell {
-    left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     height: 40px;
     width: 40px;
     position: absolute;
