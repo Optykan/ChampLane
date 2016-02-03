@@ -34,12 +34,15 @@
     position: inherit;
     margin-top: 5em;
     margin-left: 10em;
-    width: 100%;
+    width: 30%;
 }
-.row {}
+.row >* {
+    display: inline-block;
+}
 modal-bg {
     background-repeat: no-repeat;
-    background-size: 100% 110%;
+    background-position: center top;
+    background-size: 1920px 1080px;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -66,8 +69,39 @@ modal-bg {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+.ability-container {
+    position: inherit;
+    margin-left: 25%;
+}
+.ability-container img {
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 0px #3498db;
+    -webkit-transition: 0.3s box-shadow, border ease;
+    -moz-transition: 0.3s box-shadow, border ease;
+    transition: 0.3s box-shadow, border ease;
+}
+.ability-container img:hover {
+    box-shadow: 0px 0px 5px #3498db;
+    -webkit-transition: 0.3s box-shadow ease;
+    -moz-transition: 0.3s box-shadow ease;
+    transition: 0.3s box-shadow ease;
+}
+.ability-container .active {
+    border: 1px solid #3498db;
+    -webkit-transition: 0.3s box-shadow, border ease;
+    -moz-transition: 0.3s box-shadow, border ease;
+    transition: 0.3s box-shadow, border ease;
+}
+.ability-desc {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
 modal-content {
     position: absolute;
+    width: 100%;
     z-index: 3;
 }
 #champ-name {
@@ -89,11 +123,11 @@ modal-content {
     font-size: 2em
 }
 #close {
-    position: relative;
+    position: absolute;
     display: inline-block;
     color: white;
-    left: 95%;
-    top: 5%;
+    right: 5%;
+    top: 20%;
     bottom: 0px;
     color: white;
     font-size: 3em;

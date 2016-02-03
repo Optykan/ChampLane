@@ -17,15 +17,29 @@
         <modal-bg id="mbg"></modal-bg>
         <div class="champ-modal" id="modal">
             <modal-content>
-                <div class="row">
-                    <h1 id="champ-name"></h1>
-                    <h2 id="champ-title"></h2>
+                <div class="row" style="width:100%;">
+                    <div class="champ-header">
+                        <h1 id="champ-name"></h1>
+                        <h2 id="champ-title"></h2>
+                    </div>
+                    <div class="ability-container">
+                        <div class="row">
+                            <img class="ability active" src="assets/abilities/AatroxP.png">
+                            <img class="ability" src="assets/abilities/AatroxQ.png">
+                            <img class="ability" src="assets/abilities/AatroxW.png">
+                            <img class="ability" src="assets/abilities/AatroxE.png">
+                            <img class="ability" src="assets/abilities/AatroxR.png">
+                        </div>
+                        <div class="ability-desc" id="ability-desc">
+                            9/10/11
+                        </div>
+                    </div>
+                    <i class="ion ion-ios-close-outline" id="close" onclick="closeModal()"></i>
                 </div>
                 <div class="description" id="champ-desc">
                     this is a really long description
                 </div>
             </modal-content>
-            <i class="ion ion-ios-close-outline" id="close" onclick="closeModal()"></i>
         </div>
     </div>
     <div class="container">
