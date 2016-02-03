@@ -40,13 +40,13 @@ body {
     margin-top: 10px;
     position: relative;
 }
-.blue-container .champ-box .dim:hover {
+.blue-container .champ-box p:hover {
     color: #3498db;
     -webkit-transition: color 0.3s ease;
     -moz-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
-.red-container .champ-box .dim:hover {
+.red-container .champ-box p:hover {
     color: #e74c3c;
     -webkit-transition: color 0.3s ease;
     -moz-transition: color 0.3s ease;
