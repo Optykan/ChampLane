@@ -12,33 +12,42 @@
 </head>
 
 <body style="margin:0">
+
     <div class="dim-wrapper" id="dim">
         <div class="body-dim"> </div>
         <modal-bg id="mbg"></modal-bg>
         <div class="champ-modal" id="modal">
             <modal-content>
-                <div class="row" style="width:100%;">
+                <div class="champ-row">
                     <div class="champ-header">
                         <h1 id="champ-name"></h1>
                         <h2 id="champ-title"></h2>
                     </div>
-                    <div class="ability-container">
-                        <div class="row">
-                            <img class="ability active" src="assets/abilities/AatroxP.png">
-                            <img class="ability" src="assets/abilities/AatroxQ.png">
-                            <img class="ability" src="assets/abilities/AatroxW.png">
-                            <img class="ability" src="assets/abilities/AatroxE.png">
-                            <img class="ability" src="assets/abilities/AatroxR.png">
-                        </div>
-                        <div class="ability-desc" id="ability-desc">
-                            9/10/11
-                        </div>
-                    </div>
-                    <i class="ion ion-ios-close-outline" id="close" onclick="closeModal()"></i>
                 </div>
-                <div class="description" id="champ-desc">
+                <div class="ability-container">
+                    <div class="row">
+                        <img class="ability active" src="assets/abilities/AatroxP.png" data-id="passive">
+                        <img class="ability" src="assets/abilities/AatroxQ.png" data-id="0">
+                        <img class="ability" src="assets/abilities/AatroxW.png" data-id="1">
+                        <img class="ability" src="assets/abilities/AatroxE.png" data-id="2">
+                        <img class="ability" src="assets/abilities/AatroxR.png" data-id="3">
+                    </div>
+                    <div class="ability-desc-container">
+                        <p id="ability-name">
+                            Ability Name
+                        </p>
+                        <p id="ability-cost">
+                            Ability Cost
+                        </p>
+                        <p id="ability-desc">
+                            Ability Description
+                        </p>
+                    </div>
+                </div>
+                <div class="lore" id="champ-lore">
                     this is a really long description
                 </div>
+                <i class="ion ion-ios-close-outline" id="close" onclick="closeModal()"></i>
             </modal-content>
         </div>
     </div>
@@ -78,7 +87,7 @@
                 <p class="dim">
                     summoner 4
                 </p>
-                <splash data-splash="Thresh" data-name="Thresh" data-title="the Chain Warden" data-desc="''The mind is a wondrous thing to tear apart.''<br><br>Sadistic and cunning, Thresh is a restless spirit who prides himself on tormenting mortals and breaking them with slow, excruciating inventiveness. His victims suffer far beyond the point of death, for Thresh wreaks agony upon their souls, imprisoning them in his lantern to torture for all eternity."></splash>
+                <splash data-splash="Thresh" data-name="Thresh" data-title="the Chain Warden"></splash>
             </div>
             <div class="champ-box">
                 <img class="spell" src="assets/spells/SummonerFlash.png">
@@ -154,7 +163,7 @@
                 <p class="dim">
                     summoner 1
                 </p>
-                <splash data-splash="Lissandra"></splash>
+                <splash data-splash="Rumble" data-name="Rumble" data-title="the Mechanized Menace"></splash>
             </div>
             <div class="champ-box">
                 <img class="spell" src="assets/spells/SummonerFlash.png">

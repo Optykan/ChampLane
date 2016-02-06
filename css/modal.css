@@ -27,16 +27,17 @@
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-.description {
+.lore {
+    overflow: auto;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     position: inherit;
-    margin-top: 5em;
     margin-left: 10em;
-    width: 30%;
+    width: 80%;
+    height: 300px;
 }
-.row >* {
+.champ-row>*, .row>img {
     display: inline-block;
 }
 modal-bg {
@@ -62,16 +63,16 @@ modal-bg {
     height: 100%;
     width: 100%;
     z-index: 2;
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .ability-container {
-    position: inherit;
-    margin-left: 25%;
+    height: 400px;
+    margin-left: 10em;
 }
 .ability-container img {
     margin: 5px;
@@ -94,15 +95,24 @@ modal-bg {
     -moz-transition: 0.3s box-shadow, border ease;
     transition: 0.3s box-shadow, border ease;
 }
-.ability-desc {
+.ability-desc-container {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
+    width: 500px;
+}
+#ability-name {
+    color: #e74c3c;
+}
+#ability-cost {
+    color: #3498db;
 }
 modal-content {
+    overflow: auto;
     position: absolute;
     width: 100%;
     z-index: 3;
+    height: 100%;
 }
 #champ-name {
     font-family: 'Raleway', sans-serif;
@@ -127,7 +137,7 @@ modal-content {
     display: inline-block;
     color: white;
     right: 5%;
-    top: 20%;
+    top: 10%;
     bottom: 0px;
     color: white;
     font-size: 3em;
